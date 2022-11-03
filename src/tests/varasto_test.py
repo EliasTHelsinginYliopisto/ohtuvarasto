@@ -79,5 +79,7 @@ class TestVarasto(unittest.TestCase):
 
         self.assertEqual(self.varasto.__str__(),output )
 
+#comment for Tehtava 11
+
 
     
