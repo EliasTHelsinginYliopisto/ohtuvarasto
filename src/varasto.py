@@ -4,6 +4,8 @@ class Varasto:
         self.tilavuus = tilavuus
         self.saldo = alku_saldo
 
+        #liiiiiiiiiaaaaannnnn piiiiittttkkkkääääää koooommmmeeennntttiiiiiiiiiiiiii!!!1!!!
+
         #ei hyväksytä negatiivisia arvoja
         self.tilavuus = max(self.tilavuus, 0.0)
         self.saldo = max(self.saldo, 0.0)
