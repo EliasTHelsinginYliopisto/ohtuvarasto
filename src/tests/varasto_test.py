@@ -63,6 +63,11 @@ class TestVarasto(unittest.TestCase):
         #negatiivinen saldo muuttuu nollaksi
         self.assertAlmostEqual(varasto.paljonko_mahtuu(),0)
 
+    def test_virheellinen_varasto_saldo(self):
+        varasto = Varasto(10, alku_saldo=20)
+
+        self.assertAlmostEqual(varasto.saldo,10)
+
     def test_ota_virheellisesti(self):
         
         #negatiivisilla luvuilla ei oteta
@@ -79,7 +84,6 @@ class TestVarasto(unittest.TestCase):
 
         self.assertEqual(self.varasto.__str__(),output )
 
-#comment for Tehtava 11
 
 
     

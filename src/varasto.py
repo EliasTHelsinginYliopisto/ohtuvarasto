@@ -1,12 +1,9 @@
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
 
+        #ei hyväksytä negatiivisia arvoja
         self.tilavuus = tilavuus if tilavuus > 0.0 else -tilavuus
         self.saldo = alku_saldo if alku_saldo > 0.0 else -alku_saldo
-
-        #liiiiiiiiiaaaaannnnn piiiiittttkkkkääääää koooommmmeeennntttiiiiiiiiiiiiii!!!1!!!
-
-        #ei hyväksytä negatiivisia arvoja
 
         if self.saldo > self.tilavuus:
             # täyteen ja ylimäärä hukkaan!
